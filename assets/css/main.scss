@@ -1,6 +1,8 @@
 ---
 ---
 
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap");
+
 /*
  * This file controls what is imported from /_sass
  *
@@ -39,5 +41,33 @@
 
     "vendor/font-awesome/fontawesome",
     "vendor/font-awesome/solid",
-    "vendor/font-awesome/brands"
+    "vendor/font-awesome/brands",
+
+    "custom"
 ;
+
+/* Strong override: widen content area for pages using `classes: wide` */
+@media screen and (min-width: 1024px) {
+  .page.wide {
+    width: 100%;
+  }
+
+  .page.wide .page__content {
+    max-width: 100%;
+  }
+}
+
+/* Extra-wide layout: expand container and reduce left gutter impact */
+@media screen and (min-width: 2024px) {
+  #main {
+    max-width: 1400px;
+  }
+
+  .sidebar {
+    width: 260px;
+  }
+
+  .page.wide {
+    width: calc(100% - 280px);
+  }
+}
