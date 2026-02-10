@@ -1,6 +1,6 @@
 ---
 permalink: /
-title: "About"
+title: "Susanta's Details"
 author_profile: true
 classes: wide
 redirect_from: 
